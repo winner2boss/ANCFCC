@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{964F7317-B6E8-4945-B897-6126B7D176C9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ANCFCC_NV</RootNamespace>
+    <AssemblyName>ANCFCC_NV</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>\\192.168.4.1\ancfcc_dep\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <TargetCulture>fr-FR</TargetCulture>
+    <ProductName>ANCFCC Indexation</ProductName>
+    <PublisherName>Finashore</PublisherName>
+    <SuiteName>Finashore</SuiteName>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>51</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>57531C5E38706587DD9D6D864320CE496A6BF58D</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>ANCFCC_NV_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\ANCFCC.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.RadDock, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.UI, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="TelerikCommon, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Authentification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Authentification.Designer.cs">
+      <DependentUpon>Authentification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bd.cs" />
+    <Compile Include="DossierF.cs" />
+    <Compile Include="Indexation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Indexation.Designer.cs">
+      <DependentUpon>Indexation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IndexationNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IndexationNV.Designer.cs">
+      <DependentUpon>IndexationNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Livrable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Livrable.Designer.cs">
+      <DependentUpon>Livrable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service.cs" />
+    <Compile Include="setIdPiece.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="setIdPiece.Designer.cs">
+      <DependentUpon>setIdPiece.cs</DependentUpon>
+    </Compile>
+    <Compile Include="setNomPiece.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="setNomPiece.Designer.cs">
+      <DependentUpon>setNomPiece.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SousDossierF.cs" />
+    <EmbeddedResource Include="Authentification.resx">
+      <DependentUpon>Authentification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Indexation.resx">
+      <DependentUpon>Indexation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IndexationNV.resx">
+      <DependentUpon>IndexationNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Livrable.resx">
+      <DependentUpon>Livrable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="setIdPiece.resx">
+      <DependentUpon>setIdPiece.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="setNomPiece.resx">
+      <DependentUpon>setNomPiece.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ANCFCC_NV_TemporaryKey.pfx" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agentsaisie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redFolder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_inout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_rotate_anticlockwise.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_rotate_clockwise.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_corriger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_rejet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_verifier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jauneDossier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoom_in.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoom_out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_sup_2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vue_indisponible.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 et x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="Telerik.WinControls">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Telerik.WinControls.RadDock">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Telerik.WinControls.UI">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="TelerikCommon">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ANCFCC.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder_edit.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

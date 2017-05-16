@@ -1,0 +1,797 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D1D300A3-3678-4011-A423-DD65DA108A3E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Consutation_Controle_Validation</RootNamespace>
+    <AssemblyName>Consutation-Controle-Validation</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>\\192.168.4.1\ancfcc_dep_controlle\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <TargetCulture>fr-MA</TargetCulture>
+    <ProductName>FinashoreControle</ProductName>
+    <PublisherName>Finashore</PublisherName>
+    <SuiteName>FinashoreControle</SuiteName>
+    <ApplicationRevision>58</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Consutation_Controle_Validation.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>4FC7F505A88E9AF90463B78EFDC2CE6027D78451</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Consutation-Controle-Validation_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.ChartView, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.GridView, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.PdfViewer, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.PivotGrid, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.RadChart, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.RadDock, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.RadMarkupEditor, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.RichTextBox, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Scheduler, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.SpellChecker, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Office2010Black, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.UI, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="TelerikCommon, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="TelerikData, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Authentification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Authentification.Designer.cs">
+      <DependentUpon>Authentification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bd.cs" />
+    <Compile Include="choixGroupeUtilisateurs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="choixGroupeUtilisateurs.Designer.cs">
+      <DependentUpon>choixGroupeUtilisateurs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="choixStatue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="choixStatue.Designer.cs">
+      <DependentUpon>choixStatue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="choix_site.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="choix_site.Designer.cs">
+      <DependentUpon>choix_site.cs</DependentUpon>
+    </Compile>
+    <Compile Include="detailsRequette.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="detailsRequette.Designer.cs">
+      <DependentUpon>detailsRequette.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ds_reporting.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_reporting.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="etatGlobal.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>etatGlobal.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ficheSD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ficheSD.Designer.cs">
+      <DependentUpon>ficheSD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formalite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formalite.Designer.cs">
+      <DependentUpon>formalite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Generateur.cs" />
+    <Compile Include="gestionEquipes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gestionEquipes.Designer.cs">
+      <DependentUpon>gestionEquipes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gestion_equipe_indexation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gestion_equipe_indexation.Designer.cs">
+      <DependentUpon>gestion_equipe_indexation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gestion_indices_titre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gestion_indices_titre.Designer.cs">
+      <DependentUpon>gestion_indices_titre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gestion_names_pieces.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gestion_names_pieces.Designer.cs">
+      <DependentUpon>gestion_names_pieces.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Historique_Operation_Dossier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Historique_Operation_Dossier.Designer.cs">
+      <DependentUpon>Historique_Operation_Dossier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Livrable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Livrable.Designer.cs">
+      <DependentUpon>Livrable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SelectionnerAgent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectionnerAgent.Designer.cs">
+      <DependentUpon>SelectionnerAgent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectionnerAgentCorrection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectionnerAgentCorrection.Designer.cs">
+      <DependentUpon>SelectionnerAgentCorrection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Service.cs" />
+    <Compile Include="SQL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SQL.Designer.cs">
+      <DependentUpon>SQL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stock.Designer.cs">
+      <DependentUpon>stock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewReport.Designer.cs">
+      <DependentUpon>ViewReport.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Authentification.resx">
+      <DependentUpon>Authentification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="choixGroupeUtilisateurs.resx">
+      <DependentUpon>choixGroupeUtilisateurs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="choixStatue.resx">
+      <DependentUpon>choixStatue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="choix_site.resx">
+      <DependentUpon>choix_site.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="detailsRequette.resx">
+      <DependentUpon>detailsRequette.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="etatGlobal.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>etatGlobal.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ficheSD.resx">
+      <DependentUpon>ficheSD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formalite.resx">
+      <DependentUpon>formalite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gestionEquipes.resx">
+      <DependentUpon>gestionEquipes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gestion_equipe_indexation.resx">
+      <DependentUpon>gestion_equipe_indexation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gestion_indices_titre.resx">
+      <DependentUpon>gestion_indices_titre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gestion_names_pieces.resx">
+      <DependentUpon>gestion_names_pieces.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Historique_Operation_Dossier.resx">
+      <DependentUpon>Historique_Operation_Dossier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Livrable.resx">
+      <DependentUpon>Livrable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SelectionnerAgent.resx">
+      <DependentUpon>SelectionnerAgent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectionnerAgentCorrection.resx">
+      <DependentUpon>SelectionnerAgentCorrection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQL.resx">
+      <DependentUpon>SQL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stock.resx">
+      <DependentUpon>stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewReport.resx">
+      <DependentUpon>ViewReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Consutation-Controle-Validation_TemporaryKey.pfx" />
+    <None Include="ds_reporting.xsc">
+      <DependentUpon>ds_reporting.xsd</DependentUpon>
+    </None>
+    <None Include="ds_reporting.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_reporting.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ds_reporting.xss">
+      <DependentUpon>ds_reporting.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jauneDossier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redFolder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agentsaisie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_inout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_rotate_anticlockwise.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_rotate_clockwise.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoom_in.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoom_out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_rejet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_verifier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_corriger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_sup.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 et x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="CrystalDecisions.CrystalReports.Engine">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.ClientDoc">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CommLayer">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CommonControls">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CommonObjectModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.Controllers">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CubeDefModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.DataDefModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.DataSetConversion">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.ObjectFactory">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.Prompting">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.ReportDefModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.XmlSerialize">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportSource">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.Shared">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.Windows.Forms">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="FlashControlV71">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="log4net">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.AnalysisServices.AdomdClient">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.mshtml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="ShockwaveFlashObjects">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="stdole">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Telerik.WinControls">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Telerik.WinControls.ChartView">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Telerik.WinControls.GridView">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Telerik.WinControls.PdfViewer">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Telerik.WinControls.PivotGrid">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Telerik.WinControls.RadChart">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Telerik.WinControls.RadDock">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Telerik.WinControls.RadMarkupEditor">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Telerik.WinControls.RichTextBox">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Telerik.WinControls.Scheduler">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Telerik.WinControls.SpellChecker">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Telerik.WinControls.Themes.Office2010Black">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Telerik.WinControls.UI">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="TelerikCommon">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="TelerikData">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

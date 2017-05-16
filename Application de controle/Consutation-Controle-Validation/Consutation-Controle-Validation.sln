@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Consutation-Controle-Validation", "Consutation-Controle-Validation\Consutation-Controle-Validation.csproj", "{D1D300A3-3678-4011-A423-DD65DA108A3E}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupANCFCC_Controle", "SetupANCFCC_Controle\SetupANCFCC_Controle.vdproj", "{77330DC0-29BD-4E42-BCCE-B71EBC8A819E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D1D300A3-3678-4011-A423-DD65DA108A3E}.Debug|x86.ActiveCfg = Debug|x86
+		{D1D300A3-3678-4011-A423-DD65DA108A3E}.Debug|x86.Build.0 = Debug|x86
+		{D1D300A3-3678-4011-A423-DD65DA108A3E}.Release|x86.ActiveCfg = Release|x86
+		{D1D300A3-3678-4011-A423-DD65DA108A3E}.Release|x86.Build.0 = Release|x86
+		{77330DC0-29BD-4E42-BCCE-B71EBC8A819E}.Debug|x86.ActiveCfg = Debug
+		{77330DC0-29BD-4E42-BCCE-B71EBC8A819E}.Release|x86.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

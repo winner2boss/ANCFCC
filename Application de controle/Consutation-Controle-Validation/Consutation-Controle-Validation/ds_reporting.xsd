@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ds_reporting" targetNamespace="http://tempuri.org/ds_reporting.xsd" xmlns:mstns="http://tempuri.org/ds_reporting.xsd" xmlns="http://tempuri.org/ds_reporting.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Site_ANCFCCConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Site_ANCFCCConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Consutation_Controle_Validation.Properties.Settings.GlobalReference.Default.Site_ANCFCCConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VEtatGlobalTableAdapter" GeneratorDataComponentClassName="VEtatGlobalTableAdapter" Name="VEtatGlobal" UserDataComponentName="VEtatGlobalTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Site_ANCFCCConnectionString (Settings)" DbObjectName="Site_ANCFCC.dbo.VEtatGlobal" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [Réf Dossier], Livrable, [Code Livrable], [Status Dossier], [Status livrable] FROM dbo.VEtatGlobal</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Réf Dossier" DataSetColumn="Réf Dossier" />
+              <Mapping SourceColumn="Livrable" DataSetColumn="Livrable" />
+              <Mapping SourceColumn="Code Livrable" DataSetColumn="Code Livrable" />
+              <Mapping SourceColumn="Status Dossier" DataSetColumn="Status Dossier" />
+              <Mapping SourceColumn="Status livrable" DataSetColumn="Status livrable" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ds_reporting" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ds_reporting" msprop:Generator_UserDSName="ds_reporting">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="VEtatGlobal" msprop:Generator_TableClassName="VEtatGlobalDataTable" msprop:Generator_TableVarName="tableVEtatGlobal" msprop:Generator_TablePropName="VEtatGlobal" msprop:Generator_RowDeletingName="VEtatGlobalRowDeleting" msprop:Generator_RowChangingName="VEtatGlobalRowChanging" msprop:Generator_RowEvHandlerName="VEtatGlobalRowChangeEventHandler" msprop:Generator_RowDeletedName="VEtatGlobalRowDeleted" msprop:Generator_UserTableName="VEtatGlobal" msprop:Generator_RowChangedName="VEtatGlobalRowChanged" msprop:Generator_RowEvArgName="VEtatGlobalRowChangeEvent" msprop:Generator_RowClassName="VEtatGlobalRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Réf_x0020_Dossier" msprop:Generator_ColumnVarNameInTable="columnRéf_Dossier" msprop:Generator_ColumnPropNameInRow="Réf_Dossier" msprop:Generator_ColumnPropNameInTable="Réf_DossierColumn" msprop:Generator_UserColumnName="Réf Dossier" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Livrable" msprop:Generator_ColumnVarNameInTable="columnLivrable" msprop:Generator_ColumnPropNameInRow="Livrable" msprop:Generator_ColumnPropNameInTable="LivrableColumn" msprop:Generator_UserColumnName="Livrable" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="256" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Code_x0020_Livrable" msprop:Generator_ColumnVarNameInTable="columnCode_Livrable" msprop:Generator_ColumnPropNameInRow="Code_Livrable" msprop:Generator_ColumnPropNameInTable="Code_LivrableColumn" msprop:Generator_UserColumnName="Code Livrable" type="xs:int" />
+              <xs:element name="Status_x0020_Dossier" msprop:Generator_ColumnVarNameInTable="columnStatus_Dossier" msprop:Generator_ColumnPropNameInRow="Status_Dossier" msprop:Generator_ColumnPropNameInTable="Status_DossierColumn" msprop:Generator_UserColumnName="Status Dossier" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="256" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Status_x0020_livrable" msprop:Generator_ColumnVarNameInTable="columnStatus_livrable" msprop:Generator_ColumnPropNameInRow="Status_livrable" msprop:Generator_ColumnPropNameInTable="Status_livrableColumn" msprop:Generator_UserColumnName="Status livrable" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:VEtatGlobal" />
+      <xs:field xpath="mstns:Code_x0020_Livrable" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
